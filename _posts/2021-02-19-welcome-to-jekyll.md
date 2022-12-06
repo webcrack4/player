@@ -7,7 +7,7 @@ categories: jekyll update
 
 {% assign mp3_files = site.static_files | where: "mp3", true %}
 {%- for mp3 in mp3_files -%}
-  <p>https://jsd.cdn.zzko.cn/gh/webcrack4/player@main{{ mp3.path }}</p> <br />
+  https://jsd.cdn.zzko.cn/gh/webcrack4/player@main{{ mp3.path }} <br />
   <audio src="https://jsd.cdn.zzko.cn/gh/webcrack4/player@main{{ mp3.path }}" preload="none" controls="controls"/>
 {%- endfor -%}
 
