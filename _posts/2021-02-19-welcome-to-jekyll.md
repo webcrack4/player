@@ -7,8 +7,5 @@ categories: jekyll update
 
 {% assign mp3_files = site.static_files | where: "mp3", true %}
 {%- for mp3 in mp3_files -%}
-<iframe src="https://amazingaudioplayer.com/audioplayer/audioplayer.html" 
-width="400" height="400" border="0" frameborder="0"  scrolling="no">
-  https://jsd.cdn.zzko.cn/gh/webcrack4/player@main{{ mp3.path }}
-</iframe>
+  <audio src="https://jsd.cdn.zzko.cn/gh/webcrack4/player@main{{ mp3.path }}" preload="none" controls="controls"/>
 {%- endfor -%}
